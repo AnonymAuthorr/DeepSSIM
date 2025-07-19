@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deepssim"
+version = "0.0.0"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+description = "Implementation of our paper. DeepSSIM is a Novel Metric for Quantifying Memorization in Generative Models."
+keywords = ["deep learning", "medical imaging", "generative models", "privacy preserving", "brain mri"]
+authors = [
+    { name = "Author_1", email = "" },
+    { name = "Author_2", email = "" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "einops==0.8.1",
+    "matplotlib==3.9.2",
+    "monai==1.4.0",
+    "numpy==1.26.4",
+    "pandas==2.2.3",
+    "psutil==7.0.0",
+    "scikit-image==0.24.0",
+    "scikit-learn==1.6.0",
+    "seaborn==0.13.2",
+    "tensorboard==2.18.0",
+    "torch==2.6.0",
+    "torchvision==0.21.0",
+    "tqdm==4.67.1"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
